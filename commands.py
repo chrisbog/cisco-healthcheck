@@ -1,0 +1,56 @@
+commands_ios=['sh ver',
+          "sh license",
+          "sh processes cpu history",
+          "sh processes cpu sort | ex 0.0",
+          "sh arp",
+          "sho ip interface brief",
+          "show spanning-tree active",
+          "show environment",
+          "show diag"
+          ]
+
+commands_iosxr = ['sh reboot hist',
+                  'sh config commit',
+                  'sh install active summary',
+                  'sh platform',
+                  'sh redundancy',
+                  'sh diag details',
+                  'sh memory summary',
+                  'sh watchdog memory-state location all',
+                  'sh mem heap summ all',
+                  'sh env temp',
+                  'sh env voltage',
+                  'sh env led'
+
+                  ]
+
+commands_nxos = ['show interface counter error',
+                 'show processes cpu history',
+                 'show processes cpu sort | ex 0.0',
+                 'show sys internal mts buff detail',
+                 'show logg onboard exceptional-log',
+                 'show spanning-tree active detail | in exe|topo|from',
+                 'show policy-map interface control plane',
+                 'show module',
+                 'show environment | ex OK',
+                 'show logg last 100',
+                 'show diagnostic events | in Fail|Bad',
+                 'show diagnostic results module all',
+                 'show environmental temperature | ex Ok',
+                 'show environment power',
+                 'show processes cpu history',
+                 'show module',
+                 'show cores vdc-all',
+                 'show system internal mts buffer summary',
+                 'sho policy-map interface | inc net|nel|drop | ex ": 0" | ex "violated 0" | ex "conformed 0"',
+                 'show policy-map interface control-plane | i class|module|trans|drop | ex "0 packets"',
+                 'show interface counters errors | exclude "\ 0\ *0\ *0\ *0\ *0\ *0"| ex "\ 0\ *--\ *0\ *0\ *0"',
+                 'show interface counter errors | diff',
+                 'sho hardware capacity eobc',
+                 'sho hardware capacity module'
+                 'sho hardware internal forwarding l2 table utilization',
+                 'show system internal access-list resource utilization | in INSTANCE|Resource|--|Free|Utilization$|[1][0-05-9][0-9]\.',
+                 'show hardware rate-limiter',
+                 'sho hardware internal cpu-mac eobc stats | grep -a 26 Error.counters',
+                 'sho spanning-tree det | i occur|exec|from'
+                 ]
